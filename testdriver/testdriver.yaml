@@ -1,0 +1,16 @@
+version: 5.7.49
+session: 68428f2fcc0ea08e40bcd1dd
+steps:
+  - prompt: open https://docs.testdriver.ai/overview/quickstart#install-the-cli
+    commands:
+      - command: focus-application
+        name: Google Chrome
+      - command: hover-text
+        text: Search Google or type a URL
+        description: main google search
+        action: click
+      - command: type
+        text: https://docs.testdriver.ai/overview/quickstart#install-the-cli
+      - command: press-keys
+        keys:
+          - enter
